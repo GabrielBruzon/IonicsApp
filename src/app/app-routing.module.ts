@@ -5,6 +5,10 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+  },
+  {
+    path: 'inecolwelcome',
+    loadChildren: () => import('./inecolwelcome/inecolwelcome.module').then( m => m.InecolwelcomePageModule)
   }
 ];
 @NgModule({
